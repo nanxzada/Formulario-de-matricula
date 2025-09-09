@@ -50,3 +50,23 @@ select {
     background: url(../../assents/icons/arrow-down-01.svg)
     no-repeat calc (100% - 1rem)
 }
+
+.address .flex{
+
+    gap: 1.25rem;
+
+}
+
+.input_wrapper:has([disables]){
+    opacity: .5;
+}
+
+input {
+    &[disabled]{
+        background-color: var(--surface-disabled);
+
+        border: 1px solid var(--stroke-default);
+
+        color: var(--text-primary);
+    }
+}
